@@ -13,7 +13,7 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
   const totalBalance = parseFloat(totalBalanceString);
   depositMoneyElement.value = '';
 
-  if(isNaN(depositMoneyString)){
+  if(isNaN(depositMoney)){
     alert('Enter the amount you want to deposit.')
   }
   else{
@@ -39,7 +39,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
   const totalBalance = parseFloat(totalBalanceString);
   withdrawMoneyElement.value = '';
 
-  if(isNaN(withdrawMoneyString)){
+  if(isNaN(withdrawMoney)){
     alert('Enter the amount you want to withdraw.')
   }
   else if(totalBalance < withdrawMoney){
